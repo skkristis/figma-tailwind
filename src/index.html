@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/index.css" rel="stylesheet" />
+    <title>Tailwind sample</title>
+    <style>
+       @media (max-width: 666px){
+        main, footer {
+          padding: 0 5px;
+        }
+      }
+      @media (max-width: 555px){
+        #skills {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <hr class="bg-[#7ABCAC] h-[60px] border-none" />
+
+<header class="mx-auto w-3/4 lg:w-1/2 text-center mb-16 py-9  border-4 border-black relative top-[-20px]">
+  <h1 class="font-bold px-5  text-[48px] leading-tight mb-5">SOPHIE ALPERT</h1>
+  <p class="font-bold text-[24px] text-white bg-black inline px-6 ">PROGRAMMER</p>
+</header>
+
+      <main class="mb-10">
+        <!-- links -->
+        <!-- about me -->
+        <div class="flex flex-col md:flex-row lg:gap-x-[60px] gap-x-[40px]">
+          <section class="flex-1 mb-[60px]">
+            <h3 class="font-bold text-[24px]">LINKS</h3>
+            <hr class="before:block before:w-[72px] before:h-3 before:bg-[#7ABCAC] before:absolute before:left-0 before:top-[-4px] relative overflow-visible h-1 border-none bg-gray-300 mb-5 mt-1" />
+            <ul>
+              <li class="my-2">
+                <img class="inline mr-2" src="./img/Ellipse 1.svg" alt="" />
+                <p class="inline font-bold text-[16px] align-middle">LINKEDIN/username</p>
+              </li>
+              <li class="my-2 font-bold text-[16px]">
+                <img class="inline mr-2" src="./img/Ellipse 1 (1).svg" alt="" />
+                <p class="inline font-bold text-[16px] align-middle">TWITTER/@user-handle</p>
+              </li>
+              <li class="my-2 font-bold text-[16px]">
+                <img class="inline mr-2" src="./img/Ellipse 1 (2).svg" alt="" />
+                <p class="inline font-bold text-[16px] align-middle">GITHUB/username</p>
+              </li>
+              <li class="my-2 font-bold text-[16px]">
+                <img class="inline mr-2" src="./img/Ellipse 1 (3).svg" alt="" />
+                <p class="inline font-bold text-[16px] align-middle">BLOG/blog-name</p>
+              </li>
+            </ul>
+          </section>
+          <section class="flex-2 mb-[60px]">
+            <h3 class="font-bold text-[24px]">ABOUT ME</h3>
+            <hr class="before:block before:w-[72px] before:h-3 before:bg-[#7ABCAC] before:absolute before:left-0 before:top-[-4px] relative overflow-visible h-1 border-none bg-gray-300 mb-5 mt-1" />
+            <p class="font-medium text-base leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue egestas, dapibus justo et, lobortis ex. Nullam tortor diam, venenatis at enim a, lacinia porttitor erat. Vivamus tempor dictum leo id aliquam. Praesent elit lacus, tempus ac vehicula in, imperdiet dapibus elit. Nullam scelerisque euismod leo id vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam.</p>
+          </section>
+        </div>
+
+        <!-- education -->
+        <!-- skills -->
+        <div class="flex flex-col md:flex-row lg:gap-x-[60px] gap-x-[40px]">
+          <section class="flex-1 mb-[60px] ">
+            <h3 class="font-bold text-[24px]">EDUCATION</h3>
+            <hr class="before:block before:w-[72px] before:h-3 before:bg-[#7ABCAC] before:absolute before:left-0 before:top-[-4px] relative overflow-visible h-1 border-none bg-gray-300 mb-5 mt-1" />
+            <article>
+              <p class="font-bold">
+                SCHOOL NAME <br />
+                2009 - 2013 <br />
+                Degree
+              </p>
+            </article>
+            <hr class="bg-gray-300 max-w-full md:w-3/4 h-1 border-none  my-4" />
+            <article></article>
+            <p class="font-bold">
+              SCHOOL NAME <br />
+              2009 - 2013 <br />
+              Degree
+            </p>
+          </section>
+          <section id="skills" class="flex-2 flex   lg:gap-x-[60px] gap-x-[40px]">
+            <article class="flex-1">
+              <h3 class="font-bold text-[24px]">PERSONAL SKILLS</h3>
+              <hr class="before:block before:w-[72px] before:h-3 before:bg-[#7ABCAC] before:absolute before:left-0 before:top-[-4px] relative overflow-visible h-1 border-none bg-gray-300 mb-5 mt-1" />
+              <ul>
+                <li class="my-7"><p class="inline bg-[#7ABCAC] px-4 py-[1px] rounded-full align-middle font-bold">TEAMWORK</p></li>
+                <li class="my-7"><p class="inline bg-[#D8DA79] px-4 py-[1px] rounded-full align-middle font-bold">COMMUNICATION</p></li>
+                <li class="my-7"><p class="inline bg-[#C29486] px-4 py-[1px] rounded-full align-middle font-bold">ORGANIZATION</p></li>
+              </ul>
+            </article>
+            <article class="flex-1">
+              <h3 class="font-bold text-[24px]">TECHNICAL SKILLS</h3>
+              <hr class="before:block before:w-[72px] before:h-3 before:bg-[#7ABCAC] before:absolute before:left-0 before:top-[-4px] relative overflow-visible h-1 border-none bg-gray-300 mb-5 mt-1" />
+              <ul>
+                <li class="my-7"><p class="inline bg-[#7ABCAC] px-4 py-[1px] rounded-full align-middle font-bold">HTML</p></li>
+                <li class="my-7"><p class="inline bg-[#7ABCAC] px-4 py-[1px] rounded-full align-middle font-bold">CSS/SCSS</p></li>
+                <li class="my-7"><p class="inline bg-[#D8DA79] px-4 py-[1px] rounded-full align-middle font-bold">JAVASCRIPT</p></li>
+                <li class="my-7"><p class="inline bg-[#D8DA79] px-4 py-[1px] rounded-full align-middle font-bold">REACT.JS</p></li>
+              </ul>
+            </article>
+          </section>
+        </div>
+
+        <!-- work experience -->
+        <div>
+          <h3 class="font-bold text-[24px]">WORK EXPERIENCE</h3>
+          <hr class="before:block before:w-[72px] before:h-3 before:bg-[#7ABCAC] before:absolute before:left-0 before:top-[-4px] relative overflow-visible h-1 border-none bg-gray-300 mb-5 mt-1" />
+          <div class="flex flex-col md:flex-row gap-[15px]">
+           
+            <article>
+              <h5 class="font-bold text-center">JOB POSITION</h5>
+
+              <h6 class="font-medium text-center mb-5">
+                Company <br />
+                2018 - present
+              </h6>
+              <p class="font-medium text-base leading-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue.
+                <br />
+                <br>
+                • Lorem ipsum dolor <br />
+                • Consectetur adipiscing elit
+              </p>
+            </article>
+            <article class="border-x-0 md:border-x-4 border-y-4 md:border-y-0 px-0 md:px-[15px] py-[15px] md:py-0">
+              <h5 class="font-bold text-center">JOB POSITION</h5>
+
+              <h6 class="font-medium text-center mb-5">
+                Company <br />
+                2017 - 2018
+              </h6>
+              <p class="font-medium text-base leading-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue.
+                <br />
+                <br>
+                • Lorem ipsum dolor <br />
+                • Consectetur adipiscing elit
+              </p>
+            </article>
+            <article>
+              <h5 class="font-bold text-center">JOB POSITION</h5>
+
+              <h6 class="font-medium text-center mb-5">
+                Company <br />
+                2015 - 2017
+              </h6>
+              <p class="font-medium text-base leading-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue.
+                <br />
+                <br>
+                • Lorem ipsum dolor <br />
+                • Consectetur adipiscing elit
+              </p>
+            </article>
+          </divf>
+        </div>
+      </main>
+      
+      <hr class="h-1 border-none bg-gray-300">
+      
+      <footer class="flex flex-col md:flex-row mt-10 mb-10 px-4 gap-[20px] md:gap-[60px]">
+<article class="flex-1">
+<p class="bg-black white text-white font-bold text-[24px] text-center">LOCATION</p>
+<p class="text-center text-[16px] font-medium mt-2">Porto, Portugal</p>
+</article>
+<article class="flex-1">
+<p class="bg-black white text-white font-bold text-[24px] text-center">CONTACT</p>
+<p class="text-center text-[16px] font-medium mt-2 leading-5">+37060000333 <br>
+  email@test.dev
+</p>
+</article>
+<article class="flex-1">
+<p class="bg-black white text-white font-bold text-[24px] text-center">SOCIAL</p>
+<p class="text-center text-[16px] font-medium mt-2 leading-5">Linkedin/username <br>
+Twitter/@user-handle</p>
+</article>
+      </footer>
+    </div>
+  </body>
+</html>
