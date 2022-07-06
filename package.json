@@ -2,12 +2,15 @@
   "name": "basic-template",
   "version": "1.0.0",
   "scripts": {
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "build": "rm -rf build && parcel build src/index.html --out-dir build --no-source-maps",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "keywords": [],
   "author": "Mindaugas Jačionis",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "parcel": "^2.6.2",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.4"
